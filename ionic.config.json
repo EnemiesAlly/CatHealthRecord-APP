@@ -1,0 +1,7 @@
+{
+  "name": "Cat Health Record",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

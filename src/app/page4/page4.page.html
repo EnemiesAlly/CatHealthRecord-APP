@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>เพิ่มบันทึกแมว | Add Cat Record</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>ส่วนที่ 1 : ข้อมูลทั่วไป</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div style="text-align: center;">
+        <!-- Avatar สำหรับแสดงรูป -->
+        <ion-avatar style="width: 100px; height: 100px; margin: 10px auto;">
+          <img [src]="selectedImage" alt="Cat Image" />
+        </ion-avatar>
+
+        <!-- ปุ่มสำหรับอัปโหลดรูปภาพ -->
+        <ion-button (click)="selectImage()">กดเพิ่มรูปภาพ</ion-button>
+      </div>
+
+      <ion-item>
+        <ion-label position="stacked">ชื่อแมว</ion-label>
+        <ion-input placeholder="กรอกชื่อแมว"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">อายุแมว</ion-label>
+        <ion-input type="number" placeholder="กรอกอายุแมว"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">หน่วยอายุ</ion-label>
+        <ion-select placeholder="เลือกหน่วยอายุ">
+          <ion-select-option value="years">ปี</ion-select-option>
+          <ion-select-option value="months">เดือน</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <!-- ปุ่มแก้ไขและถัดไป -->
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" [routerLink]="'/page3'">แก้ไข</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" color="primary" [routerLink]="'/page5'">ถัดไป</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

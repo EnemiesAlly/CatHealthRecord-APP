@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>เพิ่มบันทึกแมว | Add Cat Record</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>ส่วนที่ 1 : ข้อมูลทั่วไป</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <!-- Circle for Image Upload -->
+      <div style="text-align: center;">
+        <!-- แสดงรูปภาพที่เลือก -->
+        <img [src]="selectedImage" alt="Cat Image" style="width: 150px; height: 150px; border-radius: 50%;" />
+        <p></p>
+
+        <!-- ปุ่มกดเพื่อเพิ่มรูปภาพ -->
+        <ion-button (click)="selectImage()">กดเพิ่มรูปภาพ</ion-button>
+      </div>
+
+      <!-- Input Fields -->
+      <ion-item>
+        <ion-label position="stacked">ชื่อแมว</ion-label>
+        <ion-input placeholder="กรอกชื่อแมว"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">อายุแมว</ion-label>
+        <ion-input type="number" placeholder="กรอกอายุแมว"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">หน่วยอายุ</ion-label>
+        <ion-select placeholder="เลือกหน่วยอายุ">
+          <ion-select-option value="years">ปี</ion-select-option>
+          <ion-select-option value="months">เดือน</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <!-- Button -->
+      <ion-button expand="block" color="primary" [routerLink]="'/page3'">ถัดไป</ion-button>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

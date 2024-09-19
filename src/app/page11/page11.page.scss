@@ -1,0 +1,92 @@
+ion-content {
+    --background: linear-gradient(to bottom, #ffde59, #ff914d); /* พื้นหลังสีส้มแบบเต็มหน้าจอ */
+    min-height: 100vh; /* ครอบคลุมความสูงเต็มหน้าจอ */
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+  }
+  
+  .icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 33%;
+  }
+  
+  .icon-item ion-icon {
+    color: #000;
+    font-size: 64px;
+  }
+  
+  .icon-item p {
+    margin-top: 8px;
+    font-size: 1.1rem;
+    color: #000;
+  }
+  
+  .center-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    margin-top: 40px;
+  }
+  
+  .center-item ion-icon {
+    font-size: 64px;
+    color: #000;
+  }
+  
+  .center-item p {
+    margin-top: 8px;
+    font-size: 1.2rem;
+    color: #000;
+  }
+  
+  ion-header {
+    --background: transparent;
+    --ion-color-primary: #ff9800;
+  }
+  
+  ion-toolbar {
+    --padding-top: 12px;
+    --padding-bottom: 12px;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+  }
+  .circle-image {
+    width: 150px; /* ความกว้างของรูป */
+    height: 150px; /* ความสูงของรูป */
+    border-radius: 50%; /* ทำให้รูปภาพกลม */
+    object-fit: cover; /* ปรับรูปให้ครอบคลุมในกรอบที่กำหนด */
+    margin-bottom: 20px; /* ระยะห่างระหว่างรูปและข้อความ */
+    border: 2px solid #fff; /* ถ้าต้องการขอบรอบรูป */
+  }
+  
+  .pt{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .circle-image {
+    width: 80px; /* ความกว้างของรูป */
+    height: 80px; /* ความสูงของรูป */
+    border-radius: 50%; /* ทำให้รูปภาพกลม */
+    object-fit: cover; /* ปรับรูปให้ครอบคลุมในกรอบที่กำหนด */
+    margin-bottom: 20px; /* ระยะห่างระหว่างรูปและข้อความ */
+    border: 2px solid #fff; /* ถ้าต้องการขอบรอบรูป */
+  }

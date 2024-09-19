@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>เพิ่มบันทึกแมว | Add Cat Record</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>ส่วนที่ 2 : ข้อมูลยุติธรรมเบื้องต้น</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">สายพันธุ์แมว</ion-label>
+        <ion-input value="British Shorthair" readonly></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">น้ำหนักแมว</ion-label>
+        <ion-input value="5.42 กิโลกรัม" readonly></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">สีของแมว</ion-label>
+        <ion-input placeholder="กรอกสีของแมว"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">นัดพบสัตว์แพทย์ล่าสุด</ion-label>
+        <ion-input type="text" placeholder="DD/MM/YYYY" inputmode="numeric"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">นัดพบสัวต์แพทย์ครั้งถัดไป</ion-label>
+        <ion-input type="text" placeholder="DD/MM/YYYY" inputmode="numeric"></ion-input>
+      </ion-item>
+
+      <ion-button expand="block" color="primary" [routerLink]="'/page3'">แก้ไข</ion-button>
+      <ion-button expand="block" color="secondary" [routerLink]="'/page6'">ยืนยัน</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
